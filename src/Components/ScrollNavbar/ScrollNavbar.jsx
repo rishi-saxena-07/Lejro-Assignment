@@ -34,13 +34,15 @@ const ScrollNavbar = () => {
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex justify-between items-center px-[10.6rem]">
-          <div className="w-[14rem] h-[4rem] flex items-center">
-            <img src={lejhroLogo} alt="Lejhro Logo" className="w-[14rem] h-[2rem]" />
+        <div className="flex justify-between items-center px-4 lg:px-[10.6rem] py-4">
+          {/* Logo Section */}
+          <div className="flex items-center">
+            <img src={lejhroLogo} alt="Lejhro Logo" className="w-[10rem] h-auto" />
           </div>
 
+          {/* Hamburger Menu Section */}
           <div className="flex items-center space-x-4">
-            <span className="text-lg font-bold text-blue-600 mr-2 hidden md:inline">
+            <span className="text-lg font-bold text-blue-600 hidden md:inline">
               <a href="https://www.lejhro.com/contact-us">Let's Talk <span className="text-lg font-bold">→</span></a>
             </span>
             <HamburgerMenu onClick={handleHamburgerToggle} />
