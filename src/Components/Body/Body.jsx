@@ -1,7 +1,9 @@
 import blogImg from "../../Assets/blog39.png"
+import ScrollNavbar from "../ScrollNavbar/ScrollNavbar"
 
 const Body = () => {
   return ( <>
+    <ScrollNavbar />
     <div className="blog-contant px-[10.8rem] py-[1.5rem] bg-gray-200">
         <div className="blog-contant-container rounded-3xl p-20 bg-white">
             <h1 className=" font-bold text-3xl mb-2" style={{color:"#3a3632"}}>Statistical Approaches for Balancing Ethical Privacy & Data-Driven Innovation</h1>
