@@ -5,7 +5,7 @@ import lejhroLogo from "../../Assets/lejhro_logo_white.png";
 const Header = () => {
   return (
     <>
-      <div className="px-[10.6rem] py-[1.9rem] h-[15.6rem]" style={{ backgroundColor: "#d6932c" }}>
+      <div className="px-4 lg:px-[10.6rem] py-[1.9rem] h-[15.6rem]" style={{ backgroundColor: "#d6932c" }}>
         <div className="top-header-header-div flex justify-between items-center ">
           {/* Logo Section */}
           <div className="top-header-header-logo-div">
@@ -18,8 +18,8 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Navigation Menu */}
-          <div className="hidden md:hidden lg:flex space-x-12 text-white text-lg mr-2">
+          {/* Navigation Menu (Hidden on mobile) */}
+          <div className="hidden lg:flex space-x-12 text-white text-lg mr-2">
             <a
               href="http://www.lejhro.com/innovations"
               className="hover:text-gray-300"
@@ -46,10 +46,11 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Hamburger Menu */}
+          {/* Hamburger Menu (Visible on mobile) */}
           <HamburgerMenu />
         </div>
-        <h2 className="home-page-name h2-heading text-5xl text-start py-[1.4rem] mb-[1.5rem]  text-white">
+        {/* Blog Title (Visible on all screen sizes) */}
+        <h2 className="home-page-name h2-heading text-5xl text-start py-[1.4rem] mb-[1.5rem] text-white">
           Blogs
         </h2>
       </div>
